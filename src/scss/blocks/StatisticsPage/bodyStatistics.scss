@@ -1,0 +1,63 @@
+.body-statistics {
+	display: grid;
+	grid-template-areas:
+		'selectedDay selectedDay selectedDay schedule schedule schedule schedule schedule schedule schedule schedule schedule  '
+		'completedTasks completedTasks completedTasks schedule schedule schedule schedule schedule schedule schedule schedule schedule '
+		'focus focus focus focus pauseTime pauseTime pauseTime pauseTime stops stops stops stops';
+	grid-template-rows: auto auto;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 32px;
+	margin-bottom: 32px;
+}
+@media (max-width: 1184px) {
+	.body-statistics {
+		grid-template-areas:
+			'selectedDay  completedTasks'
+			'schedule  schedule '
+			'focus  pauseTime '
+			'stops stops ';
+		grid-template-rows: auto 471px auto auto;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 22px;
+		margin-bottom: 22px;
+	}
+}
+
+@media (max-width: 628px) {
+	.body-statistics {
+		grid-template-areas:
+			'selectedDay'
+			'completedTasks'
+			'schedule'
+			'focus'
+			'pauseTime'
+			'stops';
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-columns: 1fr;
+		grid-gap: 15px;
+		margin-bottom: 15px;
+	}
+}
+.detail-statistics {
+	background: $greyF4;
+	padding: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__title {
+		font-family: 'sf-bold';
+		font-size: 24px;
+		line-height: 33px;
+		color: $text-color;
+		margin-bottom: 20px;
+	}
+	&__info {
+		font-family: 'sf-medium';
+		font-size: 64px;
+		line-height: 76px;
+		color: $text-color;
+	}
+	&__icon svg {
+		stroke: $greyC4;
+	}
+}

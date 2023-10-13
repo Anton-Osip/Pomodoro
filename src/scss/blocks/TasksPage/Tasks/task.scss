@@ -1,0 +1,65 @@
+.task {
+	animation: task 0.5s forwards;
+	&:first-child {
+		border-top: 1px solid $greyE4;
+	}
+	border-bottom: 1px solid $greyE4;
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__info {
+		display: flex;
+		align-items: center;
+	}
+	&__quantity {
+		width: 25px;
+		height: 25px;
+		border: 1px solid $greyC4;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 100%;
+		margin-right: 10px;
+
+		font-family: 'sf-light';
+		font-size: 1rem;
+		line-height: 1.0625rem;
+		color: $text-color;
+	}
+
+	&__name {
+		font-family: 'sf-light';
+		font-size: 1rem;
+		line-height: 1.0625rem;
+		color: $text-color;
+	}
+}
+
+.night .task {
+	&:first-child {
+		border-top: 1px solid #000cb6;
+	}
+	border-bottom: 1px solid #000cb6;
+	&__quantity {
+		border: 1px solid #fff;
+		color: #fff;
+	}
+
+	&__name {
+		color: #fff;
+	}
+}
+
+@keyframes task {
+	0% {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}

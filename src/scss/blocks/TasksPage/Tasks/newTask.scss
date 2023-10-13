@@ -1,0 +1,68 @@
+.task-form {
+	margin-bottom: 1.5625rem;
+	position: relative;
+	&__input {
+		display: block;
+		max-width: 370px;
+		width: 100%;
+		padding: 19px 15px;
+		font-family: 'sf-light';
+		font-size: 1rem;
+		line-height: 1.0625rem;
+		color: $text-color;
+		background: $greyF4;
+		border: 0px;
+		margin-bottom: 1.5625rem;
+		&::placeholder {
+			opacity: 1;
+			transition: opacity 0.3s;
+		}
+		&:focus::placeholder {
+			opacity: 0;
+		}
+		&--error {
+			border: 2px solid $red-color;
+		}
+	}
+	&__btn {
+		padding: 15px 50px;
+		background: $green-color;
+		border: 0px;
+		color: #fff;
+		opacity: 1;
+		cursor: pointer;
+		&:hover {
+			background: $green-hover-color;
+		}
+
+		&--error {
+			border: 2px solid $grey99;
+			background: $greyF4;
+			color: $grey99;
+			cursor: auto;
+			&:hover {
+				border: 2px solid $grey99;
+				background: $greyF4;
+				color: $grey99;
+			}
+			&:active {
+				transform: scale(1);
+			}
+		}
+	}
+	&__error {
+		position: absolute;
+		left: 15px;
+		top: 60px;
+		color: $red-color;
+		font-size: 16px;
+		line-height: 17px;
+	}
+}
+
+.night .task-form {
+	&__input {
+		color: #fff;
+		background: #06005b;
+	}
+}

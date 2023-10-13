@@ -1,0 +1,20 @@
+.task-list {
+	max-width: 370px;
+	width: 100%;
+	&__time {
+		font-family: 'sf-light';
+		font-size: 1rem;
+		line-height: 1.0625rem;
+		color: $grey99;
+		margin-top: 25px;
+	}
+}
+
+@media (max-width: 994px) {
+	.task-list {
+		max-width: 100%;
+		&__time {
+			margin-bottom: 25px;
+		}
+	}
+}

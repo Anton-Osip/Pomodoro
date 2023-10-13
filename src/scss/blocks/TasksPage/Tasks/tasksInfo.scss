@@ -1,0 +1,36 @@
+.task-info {
+	&__title {
+		font-family: 'sf-bold';
+		font-size: 1.5rem;
+		line-height: 2.0625rem;
+		color: $text-color;
+	}
+	&__list {
+		margin-bottom: 10px;
+	}
+	&__item {
+		padding-left: 23px;
+		font-family: 'sf-medium';
+		font-size: 1rem;
+		line-height: 2.0625rem;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 14px;
+			width: 5px;
+			height: 5px;
+			background: $red-hover-color;
+		}
+	}
+}
+
+.night .task-info {
+	&__title {
+		color: #fff;
+	}
+	&__item {
+		color: #fff;
+	}
+}

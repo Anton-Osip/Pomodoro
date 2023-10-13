@@ -1,0 +1,17 @@
+.task-timer {
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__text {
+		font-family: 'sf-bold';
+		color: $text-color;
+		font-size: 3rem;
+	}
+}
+@media (max-width: 991px) {
+	.task-timer__wrapper {
+		display: none;
+	}
+}

@@ -1,0 +1,15 @@
+.task-menu {
+	&__btn {
+		background-color: $bg-color;
+		border: 0px;
+		outline: none;
+		padding: 4px;
+		cursor: pointer;
+	}
+}
+
+.night .task-menu {
+	&__btn {
+		background-color: #000929;
+	}
+}

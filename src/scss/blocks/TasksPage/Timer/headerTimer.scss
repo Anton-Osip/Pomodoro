@@ -1,0 +1,52 @@
+.header-timer {
+	width: 100%;
+	background: $greyC4;
+	padding: 19px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&--taskIsWork {
+		background: $red-color;
+	}
+	&--taskIsBreak {
+		background: $green-color;
+	}
+	&__name {
+		font-family: 'sf-bold';
+		font-size: 1rem;
+		line-height: 1.0625rem;
+		color: $bg-color;
+	}
+	&__num {
+		font-family: 'sf-medium';
+		font-size: 1rem;
+		line-height: 1.0625rem;
+		color: $bg-color;
+	}
+}
+
+.night .header-timer {
+	background: #06005b;
+	&--taskIsWork {
+		background: $red-color;
+	}
+	&--taskIsBreak {
+		background: $green-color;
+	}
+	&__name {
+		color: #fff;
+	}
+	&__num {
+		color: #fff;
+	}
+}
+@media (max-width: 544px) {
+	.header-timer {
+		&__name {
+			font-size: 0.75rem;
+		}
+		&__num {
+			font-size: 0.75rem;
+		}
+	}
+}

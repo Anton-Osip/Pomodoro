@@ -1,0 +1,39 @@
+@import 'variables.scss'; //пишем переменные
+@import 'reset.scss'; //сборс стилей
+@import 'fonts.scss'; //подключаем шрифты (локально)
+@import 'style.scss';
+@import 'grid.scss';
+
+//подключаем UTILS блоки
+@import './utils/content.scss';
+@import './utils/dropdown.scss';
+@import './utils/layout.scss';
+@import './utils/popup.scss';
+
+//подключаем БЭМ блоки
+@import './blocks/header.scss';
+
+@import './blocks/TasksPage/Tasks/tasks.scss';
+@import './blocks/TasksPage/Tasks/tasksInfo.scss';
+@import './blocks/TasksPage/Tasks/newTask.scss';
+@import './blocks/TasksPage/Tasks/editTaskName.scss';
+@import './blocks/TasksPage/Tasks/task.scss';
+@import './blocks/TasksPage/Tasks/taskMenu.scss';
+@import './blocks/TasksPage/Tasks/tasksList.scss';
+@import './blocks/TasksPage/Tasks/taskMenuItem';
+
+@import './blocks/TasksPage/Timer/headerTimer.scss';
+@import './blocks/TasksPage/Timer/bodyTimer.scss';
+@import './blocks/TasksPage/Timer/dielTimer.scss';
+@import './blocks/TasksPage/Timer/menuTimer.scss';
+@import './blocks/TasksPage/Timer/taskTimer.scss';
+
+@import './blocks/StatisticsPage/headerStatistics.scss';
+@import './blocks/StatisticsPage/bodyStatistics.scss';
+@import './blocks/StatisticsPage/completedTasks.scss';
+@import './blocks/StatisticsPage/schedule.scss';
+@import './blocks/StatisticsPage/selectedDay.scss';
+@import './blocks/StatisticsPage/focus.scss';
+@import './blocks/StatisticsPage/pauseTime.scss';
+@import './blocks/StatisticsPage/stops.scss';
+@import './blocks/SettingsPage/settingsPage.scss';

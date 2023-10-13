@@ -1,0 +1,9 @@
+.focus {
+	grid-area: focus;
+	&--active {
+		background: #ffdda9;
+		& .focus__icon svg {
+			stroke: #ffae35;
+		}
+	}
+}

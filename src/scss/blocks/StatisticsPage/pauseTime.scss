@@ -1,0 +1,9 @@
+.pause-time {
+	grid-area: pauseTime;
+	&--active {
+		background: #dfdcfe;
+		& .pause-time__icon svg {
+			stroke: #9c97d7;
+		}
+	}
+}

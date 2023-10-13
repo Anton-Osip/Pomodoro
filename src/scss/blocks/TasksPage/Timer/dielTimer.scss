@@ -1,0 +1,87 @@
+.diel-timer {
+	position: relative;
+	width: 100%;
+	max-width: 370px;
+	text-align: center;
+	&__number {
+		font-family: 'sf-thin';
+		font-size: 9.375rem;
+		line-height: 11.1875rem;
+		color: $text-color;
+		&--taskIsWork {
+			color: $red-color;
+		}
+		&--taskIsBreak {
+			color: $green-color;
+		}
+	}
+	&__plus {
+		width: 50px;
+		height: 50px;
+		border-radius: 100%;
+		background: $greyC4;
+		color: $bg-color;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'sf-medium';
+		font-size: 18px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: -115px;
+		cursor: default;
+		&:active {
+			transform: scale(1) translateY(-50%);
+		}
+	}
+	&__plus--active {
+		background: $green-color;
+		cursor: pointer;
+		&:hover {
+			background: $green-hover-color;
+		}
+		&:active {
+			transform: scale(0.9) translateY(-50%);
+		}
+	}
+}
+@media (max-width: 991px) {
+	.diel-timer {
+		&__number {
+			font-size: 150px;
+			line-height: 179px;
+		}
+	}
+}
+
+@media (max-width: 670px) {
+	.diel-timer {
+		max-width: 20rem;
+		&__number {
+			font-size: 7.375rem;
+			line-height: 9.1875rem;
+		}
+		&__plus {
+			width: 40px;
+			height: 40px;
+			font-size: 16px;
+			right: -60px;
+		}
+	}
+}
+
+@media (max-width: 556px) {
+	.diel-timer {
+		max-width: 10rem;
+		&__number {
+			font-size: 3.5rem;
+			line-height: 5.4rem;
+		}
+		&__plus {
+			width: 32px;
+			height: 32px;
+			right: -40px;
+		}
+	}
+}

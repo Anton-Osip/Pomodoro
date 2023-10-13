@@ -1,0 +1,50 @@
+$columns: 12;
+$gutters: 30px;
+$container-width: 1320px;
+
+@for $i from 1 through $columns {
+	.col-#{$i} {
+		width: calc(100 / ($columns / $i)) * 1%;
+	}
+}
+
+[class*='col-'] {
+	padding-left: calc($gutters / 2);
+	padding-right: calc($gutters / 2);
+}
+
+.container {
+	max-width: $container-width;
+	padding-left: calc($gutters / 2);
+	padding-right: calc($gutters / 2);
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+@media (min-width: 540px) {
+	@for $i from 1 through $columns {
+		.col-sm-#{$i} {
+			width: calc(100 / calc($columns / $i)) * 1%;
+		}
+	}
+}
+@media (min-width: 768px) {
+	@for $i from 1 through $columns {
+		.col-md-#{$i} {
+			width: calc(100 / calc($columns / $i)) * 1%;
+		}
+	}
+}
+@media (min-width: 992px) {
+	@for $i from 1 through $columns {
+		.col-lg-#{$i} {
+			width: calc(100 / calc($columns / $i)) * 1%;
+		}
+	}
+}

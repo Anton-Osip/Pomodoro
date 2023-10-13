@@ -1,0 +1,9 @@
+.stops {
+	grid-area: stops;
+	&--active {
+		background: #c5f1ff;
+		& .stops__icon svg {
+			stroke: #7fc2d7;
+		}
+	}
+}

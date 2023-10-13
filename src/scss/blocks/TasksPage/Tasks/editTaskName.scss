@@ -1,0 +1,46 @@
+.edit-task-form {
+	position: relative;
+	max-width: 250px;
+	width: 100%;
+	&__input {
+		display: block;
+		max-width: 250px;
+		width: 100%;
+		padding: 4px 5px;
+		font-family: 'sf-light';
+		font-size: 1rem;
+		line-height: 1.0625rem;
+		color: $text-color;
+		background: $greyF4;
+		border: 0px;
+		&::placeholder {
+			opacity: 1;
+			transition: opacity 0.3s;
+		}
+		&:focus::placeholder {
+			opacity: 0;
+		}
+		&--error {
+			border: 2px solid $red-color;
+		}
+	}
+
+	&__error {
+		display: block;
+		position: absolute;
+		max-width: 100px;
+		width: 100%;
+		left: 187px;
+		top: -11px;
+		color: $red-color;
+		font-size: 16px;
+		line-height: 17px;
+	}
+}
+
+.night .edit-task-form {
+	&__input {
+		color: #fff;
+		background: #06005b;
+	}
+}

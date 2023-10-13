@@ -1,0 +1,162 @@
+.schedule {
+	background: linear-gradient(0deg, $greyEC 0 51px, $greyF4 51px 100%);
+	grid-area: schedule;
+	position: relative;
+	&__item-wrapper {
+		width: 100%;
+		height: calc(100% - 70px);
+		display: flex;
+		align-items: end;
+	}
+	&__item {
+		height: 0%;
+		width: 100%;
+		background: #ea8a79;
+		position: relative;
+		z-index: 500;
+		&--active {
+			background: $red-color;
+		}
+	}
+	&__item--null {
+		height: 5px;
+		width: 100%;
+		position: relative;
+		z-index: 500;
+		background: $greyC4;
+	}
+	&__days {
+		display: flex;
+		gap: 33px;
+		padding: 0 56px;
+		height: 100%;
+		position: relative;
+		z-index: 50;
+	}
+	&__day {
+		display: flex;
+		justify-content: end;
+		flex-direction: column;
+		background: rgba($color: $red-color, $alpha: 0.2);
+	}
+	&__text {
+		font-family: 'sf-medium';
+		padding: 11px 23px;
+		font-size: 24px;
+		line-height: 29px;
+		color: $grey99;
+		&--active {
+			color: $red-color;
+		}
+	}
+	&__markup {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 20px;
+		height: calc(100% - 51px);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: calc(25% - 33px);
+	}
+	&__markup-item {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 32px;
+	}
+	&__line {
+		background: $text-color;
+		opacity: 0.2;
+		width: 100%;
+		height: 1px;
+	}
+	&__line-text {
+		font-family: 'sf-medium';
+		font-size: 12px;
+		line-height: 33px;
+		color: $text-color;
+		white-space: nowrap;
+	}
+}
+// #000cb6 #06005b
+.night .schedule {
+	background: linear-gradient(0deg, #06005b 0 51px, #000cb6 51px 100%);
+	&__text {
+		color: #fff;
+	}
+
+	&__line {
+		background: #fff;
+	}
+	&__line-text {
+		color: #fff;
+	}
+}
+@media (max-width: 914px) {
+	.night .schedule {
+		background: linear-gradient(0deg, #06005b 0 33px, #000cb6 33px 100%);
+	}
+	.schedule {
+		background: linear-gradient(0deg, $greyEC 0 33px, $greyF4 33px 100%);
+		&__item-wrapper {
+			height: calc(100% - 46px);
+		}
+		&__days {
+			gap: 20px;
+			padding: 0 76px 0 36px;
+			justify-content: space-evenly;
+		}
+		&__day {
+			background: rgba($color: $red-color, $alpha: 0.2);
+		}
+		&__text {
+			padding: 5px 11px;
+			font-size: 16px;
+			line-height: 19px;
+		}
+		&__markup-item {
+			gap: 10px;
+		}
+	}
+}
+
+@media (max-width: 564px) {
+	.night .schedule {
+		background: linear-gradient(0deg, #06005b 0 30px, #000cb6 30px 100%);
+	}
+	.schedule {
+		background: linear-gradient(0deg, $greyEC 0 30px, $greyF4 30px 100%);
+		&__item-wrapper {
+			width: 100%;
+			height: calc(100% - 36px);
+			display: flex;
+			align-items: end;
+		}
+
+		&__days {
+			gap: 5px;
+			padding: 0 52px 0 5px;
+			justify-content: space-evenly;
+		}
+
+		&__text {
+			padding: 5px 5px;
+			font-size: 16px;
+			line-height: 19px;
+		}
+		&__markup {
+			height: calc(100% - 51px);
+			gap: calc(25% - 5px);
+		}
+		&__markup-item {
+			gap: 10px;
+		}
+		&__line-text {
+			font-size: 8px;
+			line-height: 10px;
+		}
+	}
+}

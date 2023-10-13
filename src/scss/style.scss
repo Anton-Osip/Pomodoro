@@ -1,0 +1,30 @@
+:root {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+html {
+	scroll-behavior: smooth;
+	color: $text-color;
+}
+.container {
+	margin: 0 auto;
+}
+img {
+	display: block;
+}
+.btn {
+	transition: background 0.3s, transform 0.3s, color 0.3s;
+	&:active {
+		transform: scale(0.9);
+	}
+}
+@media (max-width: 1320px) {
+	:root {
+		font-size: calc(0.04rem + 1vw);
+	}
+}
+@media (max-width: 958px) {
+	:root {
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,14 @@
+.content {
+	overflow: hidden;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.night {
+	background: #000929;
+}
+@media (max-width: 994px) {
+	.content {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}

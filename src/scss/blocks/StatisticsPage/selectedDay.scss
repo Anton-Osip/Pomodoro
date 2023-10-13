@@ -1,0 +1,31 @@
+.selected-day {
+	grid-area: selectedDay;
+	background: $greyF4;
+	padding: 25px;
+	height: 100%;
+	&__title {
+		font-family: 'sf-bold';
+		font-size: 24px;
+		line-height: 33px;
+		color: $text-color;
+		margin-bottom: 14px;
+	}
+	&__data {
+		font-family: 'sf-medium';
+		font-size: 16px;
+		line-height: 28px;
+		&--red {
+			color: $red-color;
+		}
+	}
+}
+
+.night .selected-day {
+	background: #000cb6;
+	&__title {
+		color: #fff;
+	}
+	&__data {
+		color: #fff;
+	}
+}

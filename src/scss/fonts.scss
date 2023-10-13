@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'sf-bold';
+	src: url(../assets/fonts/sf-ui-display-bold.otf) format('opentype');
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'sf-light';
+	src: url('../assets/fonts/sf-ui-display-light.otf') format('opentype');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'sf-medium';
+	src: url('../assets/fonts/sf-ui-display-medium.otf') format('opentype');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'sf-thin';
+	src: url('../assets/fonts/sf-ui-display-thin.otf') format('opentype');
+	font-weight: 200;
+}

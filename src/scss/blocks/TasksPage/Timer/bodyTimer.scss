@@ -1,0 +1,52 @@
+.body-timer {
+	background: $greyF4;
+	width: 100%;
+	padding: 71px 177px 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 32px;
+	}
+	&__task-name,
+	&__task-num {
+		font-family: 'sf-medium';
+
+		font-size: 1rem;
+		line-height: 1.0625rem;
+		color: $grey99;
+	}
+	&__task-name {
+		color: $text-color;
+	}
+}
+.night .body-timer {
+	background: #080078;
+
+	&__task-name,
+	&__task-num {
+		color: #fff;
+	}
+	&__task-name {
+		color: #fff;
+	}
+}
+@media (max-width: 958px) {
+	.body-timer {
+		padding: 50px 15px 50px;
+	}
+}
+
+@media (max-width: 520px) {
+	.body-timer {
+		&__task-name,
+		&__task-num {
+			font-size: 0.65rem;
+			line-height: 0.7rem;
+		}
+	}
+}
